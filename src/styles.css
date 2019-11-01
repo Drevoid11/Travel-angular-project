@@ -1,8 +1,13 @@
 * {box-sizing: border-box;}
 
+html {
+    height:100%;
+}
+
 body { 
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  min-height:100%; position:relative;
 }
 
 .header {
@@ -53,11 +58,10 @@ body {
   }
 }
 
-footer {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
+.footer {
+  flex-shrink: 0;
+  bottom: 0px;
+  width:100%;
   padding: 1rem;
   background-color: #efefef;
   text-align: center;

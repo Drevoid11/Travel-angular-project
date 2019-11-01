@@ -8,6 +8,7 @@ import { HelloComponent } from './hello.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { ImageComponent } from './image/image.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, MatCardModule, RouterModule.forRoot([
@@ -15,7 +16,7 @@ import { ContactComponent } from './contact/contact.component';
     {path: 'about', component: AboutComponent},
     {path: 'contact', component: ContactComponent},
   ])  ],
-  declarations: [ AppComponent, HelloComponent, HomeComponent, AboutComponent, ContactComponent ],
+  declarations: [ AppComponent, HelloComponent, HomeComponent, AboutComponent, ContactComponent, ImageComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

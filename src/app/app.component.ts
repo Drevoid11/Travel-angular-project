@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Image } from './image/image'; 
+import db from '../assets/data/db.json';
 
 @Component({
   selector: 'my-app',
@@ -6,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
-  name = 'Angular';
-}
+  imagesList: Image[] = db.images;
+ }
