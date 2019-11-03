@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Image } from './image/image'; 
 import db from '../assets/data/db.json';
 
@@ -7,6 +7,14 @@ import db from '../assets/data/db.json';
   templateUrl: './app.component.html',
   styleUrls: [ './app.component.css' ]
 })
-export class AppComponent  {
+export class AppComponent  implements OnInit{
   imagesList: Image[] = db.images;
+  constructor() {
+    console.log(db);
+  }
+  ngOnInit() 
+  {
+    console.log(db);
+  }
+
  }

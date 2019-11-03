@@ -1,19 +1,18 @@
-* {box-sizing: border-box;}
-
-html {
-    height:100%;
-}
-
-body { 
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  min-height:100%; position:relative;
+body{
+  height: 100%;
+  width: 100%;
+  margin:0%;
+  padding:0%;
+  font-family: 'Amaranth';
+  font-size: 15px;
 }
 
 .header {
   overflow: hidden;
   background-color: #f1f1f1;
   padding: 20px 10px;
+  font-family: 'Amaranth';
+
 }
 
 .header a {
@@ -46,6 +45,14 @@ body {
   float: right;
 }
 
+footer{
+  background-color: #f1f1f1;
+}
+
+footer a{
+  color: dodgerblue;
+}
+
 @media screen and (max-width: 500px) {
   .header a {
     float: none;
@@ -56,13 +63,4 @@ body {
   .header-right {
     float: none;
   }
-}
-
-.footer {
-  flex-shrink: 0;
-  bottom: 0px;
-  width:100%;
-  padding: 1rem;
-  background-color: #efefef;
-  text-align: center;
 }
