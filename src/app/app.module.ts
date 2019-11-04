@@ -13,6 +13,7 @@ import { ImageComponent } from './image/image.component';
 @NgModule({
   imports:      [ BrowserModule, FormsModule, MatCardModule, RouterModule.forRoot([
     {path: '', component : HomeComponent},
+    {path: 'home', component : HomeComponent},
     {path: 'about', component: AboutComponent},
     {path: 'contact', component: ContactComponent},
   ])  ],
