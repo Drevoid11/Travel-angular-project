@@ -1,8 +1,8 @@
 body{
   font-family: 'Amaranth';
   font-size: 15px;
-  width:1920px;
-  height:1080px;
+  width:auto;
+  height:auto;
 }
 
 .active{
@@ -41,6 +41,7 @@ body{
   background-color: #ddd;
   color: black;
   text-decoration: none;
+  transition: 0.5s all;
 
 }
 
