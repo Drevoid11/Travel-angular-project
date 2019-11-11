@@ -5,7 +5,7 @@ import db from '../assets/data/db.json';
 @Component({
   selector: 'my-app',
   templateUrl: './app.component.html',
-  styleUrls: [ './app.component.css' ]
+  styleUrls: [  ]
 })
 export class AppComponent  implements OnInit{
   imagesList: Image[] = db.images;
